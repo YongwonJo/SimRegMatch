@@ -10,7 +10,7 @@ import torchvision.transforms as transforms
 from dataloaders.datasets import RandAug
 
 
-class IMDBWIKI_Unlabeled(Dataset):
+class AgeDB_Unlabeled(Dataset):
     def __init__(self, df, data_dir, img_size, split='train'):
         self.df = df
         self.data_dir = data_dir
