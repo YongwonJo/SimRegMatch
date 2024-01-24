@@ -1,9 +1,5 @@
-import sys
-sys.path.append('/workspace/HDD/Revision_IMDB')
-
 import math
 import torch.nn as nn
-from models.fds import FDS
 
 
 def conv3x3(in_planes, out_planes, stride=1):
