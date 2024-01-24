@@ -96,10 +96,10 @@ class SimRegMatchTrainer(object):
                 # Predict strong-augmented examples
                 preds_s, _ = self.model(inputs_l)
                 
-                # loss calculation for l
+                # loss calculation for labeled examples
                 loss_x = self.criterion(preds_x, labels_l)
                 
-                # loss calculation for unlabeled data
+                # loss calculation for unlabeled examples
                 v_mean = torch.mean(preds_w, axis=2) # pseudo labeling based on our model
                 vecs_w = torch.mean(vecs_w, axis=2)
 
