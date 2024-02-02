@@ -94,7 +94,7 @@ class SimRegMatchTrainer(object):
                 vecs_w = torch.cat(vecs_w, dim=-1)
                 
                 # Predict strong-augmented examples
-                preds_s, _ = self.model(inputs_s)
+                preds_s, _ = self.model(inputs_l)
                 
                 # loss calculation for labeled examples
                 loss_x = self.criterion(preds_x, labels_l)
